@@ -4,6 +4,11 @@
 ## Project Overview
 Using Machine learning, I have used 6 different models to create predictions on credit risk. Using a dataset from LendingClub, Supervised Learning with  imbalanced-learn and scikit-learn libraries is utilized to find the best model for prediction. I oversampled the data using the RandomOverSampler and SMOTE algorithms, and undersampled the data using the ClusterCentroids algorithm. Then, I used the combinatorial approach of over and undersampling using the SMOTEENN algorithm. Once that was complete, I compared two machine learning models that reduce bias: BalancedRandomForestClassifier and EasyEnsembleClassifier. Results for the 6 different models are explored below.
 
+### Resources
+            Data Sources: LoanStats_2019Q1.csv
+            
+            Software: Jupyter Notebook
+
 ## Results
 * Naive Random Oversampling: The balanced accuracy test is 64%, high risk precision is 1% with a recall of 66% and low risk precision is 100% with a recall of 62%.
 
@@ -31,4 +36,4 @@ Using Machine learning, I have used 6 different models to create predictions on 
 
 
 ## Summary
-The 6 models revealed varying levels of accuracy and precision. However, the the Easy Ensemble AdaBoost Classifier is the standout for reccomendation for future use. For high risk candidates, the sensitivity rate is 92% with a 9% precision rate and for low risk candidates the sensitivity rate is at 94% with a precision rate of 100%. These sensitivity results were much higher than any of the other models and it has a balanced accuracy test of 93%, 15% higher than the next best model.
+The 6 models revealed varying levels of accuracy and precision. However, the Easy Ensemble AdaBoost Classifier is the standout for reccomendation for future use. For high risk candidates, the sensitivity rate is 92% with a 9% precision rate and for low risk candidates the sensitivity rate is at 94% with a precision rate of 100%. These sensitivity results were much higher than any of the other models and it has a balanced accuracy test of 93%, 15% higher than the next best model. The Easy Ensemble AdaBoost Classifier is the best model to use for the supervised learning exercise of predicting credit risk.
